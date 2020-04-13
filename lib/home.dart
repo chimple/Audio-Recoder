@@ -133,6 +133,9 @@ class _HomeState extends State<Home> {
                       }
                     });
                   }
+                  if(_currentStatus== RecordingStatus.Unset){
+                    t.cancel();
+                  }
                 });
               }
             }),
@@ -342,10 +345,8 @@ class _HomeState extends State<Home> {
           ],
         )),
         height: height * .6,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(30)),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
       );
     }
-  } 
+  }
 }
-
