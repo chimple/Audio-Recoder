@@ -1,6 +1,6 @@
-# audiorecorder
+# Audio Recorder
 
-A new Flutter project.
+A Simple audio recoder with player.
 
 ## Getting Started
 
